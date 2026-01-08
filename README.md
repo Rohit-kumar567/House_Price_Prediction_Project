@@ -1,98 +1,148 @@
-# House Price Prediction - Machine Learning Project
+# 🏠 House Price Prediction – Machine Learning Project
 
-A machine learning project that predicts house prices based on house size using Linear Regression. The project includes data generation, cleaning, model training, and visualization.
-
-## Project Structure
-
-```
-ML_Project/
-└── House_price_prediction.py
-```
-
-## Current Features
-
-### 1. Data Generation
-- Generates random dataset of 100 houses
-- House sizes range from 500 to 3500 sq ft
-- Prices calculated with realistic variation
-
-### 2. Data Preprocessing
-- **Missing Value Handling:** Fills missing prices with median values
-- **Outlier Detection:** Uses IQR (Interquartile Range) method
-- **Outlier Removal:** Removes prices outside the acceptable range
-
-### 3. Machine Learning Model
-- **Algorithm:** Linear Regression
-- **Train-Test Split:** 80% training, 20% testing
-- **Features:** House size (sq ft)
-- **Target:** House price ($)
-
-### 4. Model Evaluation
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
-- R² Score (coefficient of determination)
-
-### 5. Visualization
-- Raw data scatter plot (before cleaning)
-- Actual vs Predicted comparison
-- Regression line visualization
-
-## Technologies Used
-
-- **Python 3.x**
-- **NumPy:** Numerical computations
-- **Pandas:** Data manipulation
-- **Matplotlib:** Data visualization
-- **Scikit-learn:** Machine learning algorithms and metrics
-
-## Installation
-
-```bash
-pip install numpy pandas matplotlib scikit-learn
-```
-
-## Usage
-
-Run the prediction model:
-```bash
-python House_price_prediction.py
-```
-
-## Current Model Performance
-
-The model provides:
-- Coefficient (slope) indicating price change per sq ft
-- Intercept value
-- Comparison of actual vs predicted prices for test samples
-- Evaluation metrics (MSE, RMSE, R²)
-
-## Future Plans
-
-- **Frontend:** Build a web interface using HTML, CSS, JavaScript or Streamlit
-- **Deployment:** Deploy the application to cloud
-- **Accuracy Improvement:** Work on improving model accuracy with better features and algorithms
-
-## Learning Outcomes
-
-This project demonstrates:
-- End-to-end machine learning workflow
-- Data preprocessing and cleaning techniques
-- Handling missing values and outliers
-- Model training and evaluation
-- Data visualization for insights
-- Scikit-learn implementation
-
-## Next Steps
-
-1. Experiment with additional features
-2. Test different regression algorithms
-3. Build the frontend interface
-4. Deploy the application to cloud
-5. Continuously improve model accuracy
+A complete **end-to-end Machine Learning project** that predicts house prices based on house size using **Linear Regression**.
+The project also includes a **deployed Streamlit web application** for real-time predictions.
 
 ---
 
-**Project:** House Price Prediction  
-**Author:** B Rohit Kumar  
-**CSE Student**  
-**Happy Coding!** 🚀
+## 🚀 Live Demo (Streamlit App)
+
+👉 **Live Application:**
+🔗 [https://housepricepredictionproject-vwd4hylgsfhs94ojfhkutc.streamlit.app/](https://housepricepredictionproject-vwd4hylgsfhs94ojfhkutc.streamlit.app/)
+
+---
+
+## 📂 Project Structure
+
+```
+House_Price_Prediction_Project/
+│── app.py
+│── house_price_model.pkl
+│── requirements.txt
+│── README.md
+```
+
+---
+
+## ✨ Features
+
+### 1️⃣ Data Generation
+
+* Generates a synthetic dataset of **100 house records**
+* House sizes range from **500 to 3500 sq ft**
+* Prices generated with realistic variation
+
+---
+
+### 2️⃣ Data Preprocessing
+
+* **Missing Value Handling:** Missing prices filled using median
+* **Outlier Detection:** IQR (Interquartile Range) method
+* **Outlier Removal:** Removes extreme values to improve model quality
+
+---
+
+### 3️⃣ Machine Learning Model
+
+* **Algorithm:** Linear Regression
+* **Train–Test Split:** 80% training, 20% testing
+* **Feature:** House size (sq ft)
+* **Target:** House price
+
+---
+
+### 4️⃣ Model Evaluation
+
+* Mean Squared Error (MSE)
+* Root Mean Squared Error (RMSE)
+* R² Score (Coefficient of Determination)
+
+---
+
+### 5️⃣ Web Application (Streamlit)
+
+* User-friendly UI
+* Input house size
+* Instant house price prediction
+* Model loaded efficiently using caching
+* Deployed on **Streamlit Community Cloud**
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python 3**
+* **NumPy** – Numerical computations
+* **Pandas** – Data manipulation
+* **Matplotlib** – Data visualization
+* **Scikit-learn** – ML model & metrics
+* **Joblib** – Model serialization
+* **Streamlit** – Web application & deployment
+
+---
+
+## ⚙️ Installation
+
+Clone the repository and install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Usage
+
+### Run locally:
+
+```bash
+streamlit run app.py
+```
+
+### Or use the live app:
+
+🔗 [https://housepricepredictionproject-vwd4hylgsfhs94ojfhkutc.streamlit.app/](https://housepricepredictionproject-vwd4hylgsfhs94ojfhkutc.streamlit.app/)
+
+---
+
+## 📊 Model Output
+
+The model provides:
+
+* Predicted house price
+* Learned coefficient (price per sq ft)
+* Intercept value
+* Evaluation metrics (MSE, RMSE, R²)
+
+---
+
+## 🎯 Learning Outcomes
+
+This project demonstrates:
+
+* End-to-end ML workflow
+* Data cleaning & preprocessing
+* Handling missing values and outliers
+* Model training & evaluation
+* Model deployment using Streamlit
+* Building ML-powered web applications
+
+---
+
+## 🔮 Future Improvements
+
+* Add more features (location, bedrooms, age, etc.)
+* Try advanced models (Ridge, Lasso, Random Forest)
+* Improve UI/UX
+* Add data upload support
+* Store predictions in a database
+
+---
+
+## 👨‍💻 Author
+
+**B Rohit Kumar**
+CSE (AI & ML) Student
+📌 Machine Learning | Python | Streamlit
+
+**Happy Coding! 🚀**
