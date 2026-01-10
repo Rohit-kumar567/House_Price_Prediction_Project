@@ -149,7 +149,7 @@ with col1:
     selected_currency = st.selectbox(
         "💱 Select Currency",
         options=list(CURRENCY_RATES.keys()),
-        index=17 # This is INR's position (currently index=1 is CAD)
+        index=16 # This is INR's position (currently index=1 is CAD)
     )
 
     # Creating a clickable button
@@ -212,4 +212,5 @@ with col2:
 
 st.markdown("---")
 st.markdown("**Built with Streamlit** | Machine Learning House Price Predictor")
+
 
