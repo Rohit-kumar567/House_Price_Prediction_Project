@@ -135,7 +135,7 @@ def load_model():
     model = joblib.load("house_price_model.pkl")
     return model
 
-
+# model variable
 model = load_model()
 
 # Create centered container with max width
@@ -296,3 +296,4 @@ st.markdown("""
     <p>Supports 45+ currencies and 8 area units worldwide 🌍</p>
 </div>
 """, unsafe_allow_html=True)
+
